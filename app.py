@@ -223,6 +223,7 @@ def preprocess_input(pclass: int, age: float, fare: float) -> np.ndarray:
 def sigmoid(x: float) -> float:
     """Numerically stable sigmoid."""
     return float(1 / (1 + np.exp(-np.clip(x, -500, 500))))
+    
 
 
 def manual_forward_pass(pclass: int, age: float, fare: float) -> float:
